@@ -1,0 +1,61 @@
+/* header styles */
+
+header {
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 0 10px rgb(104, 98, 98);
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+
+header img {
+  height: 52px;
+  padding: 10px 0;
+}
+
+.nav-items-section {
+  margin: 12px 64px;
+}
+
+.nav-items-section a {
+  text-decoration: none;
+  /* color: var(--nav-items-violet); */
+  color: var(--nav-items-grey);
+  font-weight: 600;
+  margin-right: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-items-section a:hover {
+  color: var(--nav-items-violet);
+}
+
+header .nav-contact-section {
+  display: flex;
+  align-items: center;
+  color: #4b144b;
+  justify-content: center;
+}
+header .phone-number {
+  padding-left: 10px;
+}
+header .menu-icon {
+  color: var(--nav-items-grey);
+  margin-left: 55px;
+}
+
+header .menu-icon:hover {
+  color: var(--nav-items-violet);
+}
+
+/* resizing google icon size */
+.menu-icon .material-icons {
+  font-size: 30px;
+}
+
+/* header section end */

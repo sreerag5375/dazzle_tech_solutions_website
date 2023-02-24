@@ -1,0 +1,66 @@
+/* why we best section */
+.why-we-best {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.why-we-best .top-heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--dark-grey);
+  margin: 16px 0;
+}
+
+.why-we-best .main-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--pink);
+  margin: 20px 0;
+}
+
+.why-we-best .sub-text {
+  color: var(--violet);
+}
+
+.why-we-best .inner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.why-we-are-best .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.why-we-are-best .content .text .heading {
+  font-size: 19px;
+  color: var(--dark-grey);
+  margin-bottom: 10px;
+}
+
+.left-content .content .text .texts {
+  font-size: 15px;
+  color: grey;
+  text-align: right;
+}
+
+.right-content .content .text .texts {
+  font-size: 15px;
+  color: grey;
+  text-align: left;
+}
+
+.why-we-are-best .content .icon {
+  padding: 10px;
+}
+
+.why-we-are-best .content .icon img {
+  height: 80px;
+  width: 80px;
+}
