@@ -58,6 +58,14 @@ button {
   gap: var(--gap, 2rem);
 }
 
+.flex-col {
+  display: flex;
+  align-items: var(--align-items, center);
+  justify-content: var(--justify-content, center);
+  flex-direction: var(--direction, column);
+  gap: var(--gap, 2rem);
+}
+
 .spacer {
   display: grid;
   gap: var(--gap, 2rem);

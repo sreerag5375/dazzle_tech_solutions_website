@@ -76,7 +76,36 @@ main .hero-text {
   margin-top: 50px;
 }
 
-@media (min-width: 992px) {
+/* mobile button styles */
+@media (max-width: 480px) {
+  .hero-btn2,
+  .hero-btn1 {
+    width: 100%;
+  }
+
+  .hero-btn1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-content.flex-col {
+    --direction: row;
+    --justify-content: space-between;
+  }
+
+  .hero-content .hero-image {
+    order: 2;
+  }
+
+  main .hero-text {
+    text-align: left;
+  }
+
   .hero-text-wrapper .line1 {
     font-size: var(--fs-400);
   }
@@ -97,5 +126,16 @@ main .hero-text {
 
   .hero-text-wrapper .line5 {
     font-size: var(--fs-300);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-image {
+    padding-inline: 1rem;
+    max-width: 680px;
+  }
+
+  .hero-section {
+    padding-block: 14rem 8rem;
   }
 }
