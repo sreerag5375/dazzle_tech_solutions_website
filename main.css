@@ -71,16 +71,20 @@ button {
   gap: var(--gap, 2rem);
 }
 
-.center-element {
-  text-align: center;
-}
-
 .btn {
   border-radius: 3px;
   box-shadow: 2px 2px 10px rgb(49, 35, 38);
   color: white;
   font-weight: bold;
   padding: 1rem 1.5rem;
+}
+
+.text-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* general styling */
