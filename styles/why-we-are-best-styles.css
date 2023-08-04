@@ -8,20 +8,20 @@
 
 .why-we-best .top-heading {
   font-size: 22px;
-  font-weight: bold;
-  color: var(--dark-grey);
+  font-weight: 600;
+  color: var(--clr-neutral-700);
   margin: 16px 0;
 }
 
 .why-we-best .main-heading {
   font-size: 28px;
   font-weight: bold;
-  color: var(--pink);
+  color: var(--clr-secondary);
   margin: 20px 0;
 }
 
 .why-we-best .sub-text {
-  color: var(--violet);
+  color: var(--clr-secondary);
 }
 
 .why-we-best .inner-section {
@@ -40,7 +40,7 @@
 
 .why-we-are-best .content .text .heading {
   font-size: 19px;
-  color: var(--dark-grey);
+  color: var(--clr-neutral-700);
   margin-bottom: 10px;
 }
 

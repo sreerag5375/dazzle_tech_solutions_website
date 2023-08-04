@@ -1,9 +1,30 @@
 :root {
-  --nav-items-violet: #d1385c;
-  --nav-items-grey: #333333;
-  --violet: #4b144b;
-  --dark-grey: #232223;
-  --pink:#d1385c;
-  --light-grey:rgb(243, 239, 239);
-  --service-section-bg-color:#f9f8ff;
+  --clr-primary: #d1385c;
+  --clr-secondary: #4b144b;
+  --clr-neutral-400: #333333;
+  --clr-neutral-700: #232223;
+  --clr-accent-100: white;
+  --clr-accent-200: rgb(243, 239, 239);
+  --clr-accent-300: #f9f8ff;
+
+  --ff-primary: "Josefin Sans", sans-serif;
+  --fw-bold: 600;
+
+  --fs-100: 0.75rem; /*      12px */
+  --fs-200: 0.875rem; /*     14px */
+  --fs-300: 1rem; /*         16px */
+  --fs-400: 1.25rem; /*      20px */
+  --fs-500: 1.5rem; /*       24px */
+  --fs-600: 1.875rem; /*     30px */
+  --fs-700: 2.125rem; /*     34px */
+  --fs-800: 3rem; /*         48px */
+  --fs-900: 3.75rem; /*      54px */
+
+  /* break points */
+  --xs: 320px;
+  --sm: 480px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
 }

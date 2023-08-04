@@ -1,7 +1,7 @@
 /* services section */
 .services-section {
-    margin: 40px 60px;
-    background-color: var(--service-section-bg-color);
+    /* margin: 40px 60px; */
+    background-color: var(--clr-accent-300);
   }
   .services-section .heading {
     text-align: center;
@@ -12,18 +12,18 @@
   .services-section .heading .main-heading {
     font-size: 32px;
     line-height: 46px;
-    color: var(--pink);
+    color: var(--clr-secondary);
   }
   
   .services-section .heading .sub-heading {
     font-size: 20px;
     line-height: 38px;
-    color: var(--violet);
+    color: var(--clr-secondary);
   }
   /* services section cards */
   
   .services-section .cards {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0;
@@ -60,7 +60,7 @@
     width: 49%;
     display: flex;
     align-items: center;
-    border-left: 1px solid var(--light-grey);
+    border-left: 1px solid var(--clr-accent-200);
   }
   .services-section .card1 .left {
     height: 100%;
@@ -102,7 +102,7 @@
     width: 49%;
     display: flex;
     align-items: center;
-    border-left: 1px solid var(--light-grey);
+    border-left: 1px solid var(--clr-accent-200);
   }
   .services-section .card4 .left {
     height: 100%;
@@ -121,19 +121,19 @@
   }
   
   .content .heading {
-    color: var(--violet);
+    color: var(--clr-secondary);
     font-size: 26px;
     line-height: 30px;
   }
   
   .content .para {
-    color: var(--violet);
+    color: var(--clr-secondary);
     line-height: 27px;
   }
   
   .content .read-more {
     margin-top: 25px;
-    color: var(--pink);
+    color: var(--clr-secondary);
   }
   
   .content .read-more:hover {

@@ -10,14 +10,14 @@
   
   .company-descrption-content .heading {
     font-size: 34px;
-    color: var(--pink);
+    color: var(--clr-secondary);
     line-height: 36px;
     font-weight: bold;
   }
   
   .company-descrption-content .sub-heading1 {
     font-size: 16px;
-    color: var(--dark-grey);
+    color: var(--clr-neutral-700);
     line-height: 40px;
     font-weight: bold;
   }
@@ -25,7 +25,7 @@
   .company-descrption-content .sub-heading2 {
     margin-bottom: 24px;
     font-size: 24px;
-    color: var(--violet);
+    color: var(--clr-secondary);
     line-height: 30px;
     font-weight: bold;
   }
@@ -34,9 +34,9 @@
   .content-para2 {
     margin-bottom: 18px;
     font-size: 16px;
-    color: var(--violet);
+    color: var(--clr-secondary);
     line-height: 24px;
-    color: var(--violet);
+    color: var(--clr-secondary);
   }
   .company-descrption-content .underline {
     margin: 40px;

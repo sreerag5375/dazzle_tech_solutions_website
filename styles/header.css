@@ -3,59 +3,87 @@
 header {
   position: fixed;
   width: 100%;
+  background-color: var(--clr-accent-100);
   box-shadow: 1px 0 10px rgb(104, 98, 98);
 }
 
-header .navbar {
+.navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
 }
 
-header img {
-  height: 52px;
-  padding: 10px 0;
-}
-
-.nav-items-section {
-  margin: 12px 64px;
-}
-
-.nav-items-section a {
+.nav-links a {
   text-decoration: none;
-  /* color: var(--nav-items-violet); */
-  color: var(--nav-items-grey);
-  font-weight: 600;
-  margin-right: 24px;
+  color: var(--clr-neutral-400);
+  font-weight: var(--fw-bold);
   transition: 0.3s ease-in-out;
 }
 
-.nav-items-section a:hover {
-  color: var(--nav-items-violet);
+.nav-links a:hover {
+  color: var(--clr-primary);
 }
 
-header .nav-contact-section {
-  display: flex;
-  align-items: center;
-  color: #4b144b;
-  justify-content: center;
-}
-header .phone-number {
-  padding-left: 10px;
-}
-header .menu-icon {
-  color: var(--nav-items-grey);
-  margin-left: 55px;
+.nav-right-section > * {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-header .menu-icon:hover {
-  color: var(--nav-items-violet);
+.nav-right-section > *:hover {
+  color: var(--clr-primary);
 }
 
-/* resizing google icon size */
+.company-logo img {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.navbar {
+  padding-block: 0.7rem;
+}
+
+.nav-right-section .phone-icon,
+.phone-number {
+  display: none;
+}
+
+.nav-links {
+  display: none;
+}
+
 .menu-icon .material-icons {
-  font-size: 30px;
+  font-size: 2.2rem;
 }
 
-/* header section end */
+@media (min-width: 768px) {
+  .company-logo img {
+    height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-right-section .phone-icon,
+  .phone-number {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  header .menu-icon {
+    margin-left: 48px;
+  }
+
+  .nav-right-section.flex {
+    --gap: 0.8rem;
+    color: var(--clr-secondary);
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-links {
+    gap: 2.2rem;
+  }
+}
