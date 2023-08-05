@@ -1,66 +1,91 @@
 /* why we best section */
-.why-we-best {
-  text-align: center;
-  height: auto;
-  width: 100%;
-  margin-bottom: 50px;
+.why-we-are-best {
+  padding: 1rem;
+  background-color: var(--clr-accent-300);
 }
 
-.why-we-best .top-heading {
-  font-size: 22px;
-  font-weight: 600;
+.top-heading-wrapper .top-heading {
+  font-size: var(--fs-400);
   color: var(--clr-neutral-700);
-  margin: 16px 0;
 }
 
-.why-we-best .main-heading {
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--clr-secondary);
-  margin: 20px 0;
+.top-heading-wrapper .top-heading-primary {
+  font-size: var(--fs-650);
+  color: var(--clr-primary);
 }
 
-.why-we-best .sub-text {
+.top-heading-wrapper .top-heading-para {
   color: var(--clr-secondary);
 }
 
-.why-we-best .inner-section {
+.why-we-are-best .content-container {
+  display: grid;
+  gap: 1.2rem;
+  text-align: center;
+}
+.why-we-are-best .content-container > :last-child {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.why-we-are-best .inner-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 4rem;
   margin-top: 80px;
 }
 
-.why-we-are-best .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-
-.why-we-are-best .content .text .heading {
-  font-size: 19px;
+.why-we-are-best .text-wrapper .heading {
+  font-size: var(--fs-400);
   color: var(--clr-neutral-700);
-  margin-bottom: 10px;
+  font-weight: var(--fw-bold);
 }
 
-.left-content .content .text .texts {
-  font-size: 15px;
-  color: grey;
-  text-align: right;
+.why-we-are-best .icon-container {
+  display: flex;
+  justify-content: center;
 }
 
-.right-content .content .text .texts {
-  font-size: 15px;
-  color: grey;
-  text-align: left;
+.why-we-are-best .icon-container img {
+  max-width: 100px;
 }
 
-.why-we-are-best .content .icon {
-  padding: 10px;
+.why-we-are-best .man-image img {
+  max-height: 340px;
 }
 
-.why-we-are-best .content .icon img {
-  height: 80px;
-  width: 80px;
+.left-content-wrapper.spacer,
+.right-content-wrapper.spacer {
+  --gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .why-we-are-best .inner-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .why-we-are-best .content-container {
+    text-align: left;
+    min-width: 220px;
+    max-width: 300px;
+    min-height: 270px;
+    background: linear-gradient(
+      to right,
+      var(--clr-accent-300) 50%,
+      #f8f3f5 50%
+    );
+  }
+
+  .why-we-are-best .icon-container img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .why-we-are-best .man-image img {
+    max-height: 640px;
+  }
 }

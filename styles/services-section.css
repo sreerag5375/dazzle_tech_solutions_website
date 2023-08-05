@@ -56,9 +56,9 @@
     padding-inline: 2rem;
   }
 }
-@media (min-width: 380px) and (max-width: 768px) {
+@media (min-width: 380px) and (max-width: 767px) {
   .service-cards .image-container img {
-    max-width: 380px;
+    max-width: 320px;
   }
 }
 

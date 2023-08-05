@@ -70,6 +70,10 @@ button {
   display: grid;
   gap: var(--gap, 2rem);
 }
+.spacer-small {
+  display: grid;
+  gap: 1rem;
+}
 
 .btn {
   border-radius: 3px;
