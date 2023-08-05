@@ -1,144 +1,86 @@
 /* services section */
-.services-section {
-    /* margin: 40px 60px; */
-    background-color: var(--clr-accent-300);
+.services {
+  background-color: var(--clr-accent-300);
+  padding-block: 2.2rem;
+}
+
+.services-section .main-heading {
+  font-size: var(--fs-500);
+  line-height: 4.5rem;
+  color: var(--clr-primary);
+}
+
+.services-section .sub-heading {
+  font-size: var(--fs-300);
+  color: var(--clr-secondary);
+}
+
+.service-cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 2rem;
+}
+
+.service-cards .title {
+  color: var(--clr-secondary);
+  font-size: var(--fs-600);
+}
+
+.service-cards .para {
+  color: var(--clr-secondary);
+  padding-block: 0.2rem 0.5rem;
+  max-width: 560px;
+}
+
+.service-cards .read-more {
+  color: var(--clr-primary);
+  font-size: var(--fs-300);
+}
+
+.read-more.flex {
+  gap: 0.2rem;
+}
+
+.service-cards button {
+  border: none;
+  background-color: transparent;
+}
+
+.desc-container .read-more:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 380px) {
+  .service-cards .image-container {
+    padding-inline: 2rem;
   }
-  .services-section .heading {
-    text-align: center;
-    font-weight: bold;
-  
-    padding-top: 40px;
+}
+@media (min-width: 380px) and (max-width: 768px) {
+  .service-cards .image-container img {
+    max-width: 380px;
   }
-  .services-section .heading .main-heading {
-    font-size: 32px;
-    line-height: 46px;
+}
+
+@media (min-width: 768px) {
+  .service-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-cards .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-section .main-heading {
+    font-size: var(--fs-650);
+    line-height: 4.5rem;
+    color: var(--clr-primary);
+  }
+
+  .services-section .sub-heading {
+    font-size: var(--fs-400);
     color: var(--clr-secondary);
   }
-  
-  .services-section .heading .sub-heading {
-    font-size: 20px;
-    line-height: 38px;
-    color: var(--clr-secondary);
-  }
-  /* services section cards */
-  
-  .services-section .cards {
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px 0;
-  }
-  
-  /* card 1 */
-  .services-section .card1 {
-    height: 300px;
-    width: 50%;
-    /* background-color: #4b144b; */
-    display: flex;
-    align-items: center;
-  }
-  
-  .services-section .card1 .left {
-    height: 100%;
-    width: 50%;
-  }
-  .services-section .card1 .left img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .services-section .card1 .right {
-    width: 50%;
-  
-    padding: 0 12px;
-  }
-  
-  /* card 2 */
-  .services-section .card2 {
-    height: 300px;
-    width: 49%;
-    display: flex;
-    align-items: center;
-    border-left: 1px solid var(--clr-accent-200);
-  }
-  .services-section .card1 .left {
-    height: 100%;
-    width: 50%;
-  }
-  .services-section .card2 .left img {
-    width: 350px;
-    padding-left: 20px;
-  }
-  .services-section .card2 .right {
-    width: 50%;
-    padding: 0 12px;
-  }
-  
-  /* card 3 */
-  .services-section .card3 {
-    height: 300px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  .services-section .card3 .left {
-    height: 100%;
-    width: 50%;
-  }
-  .services-section .card3 .left img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .services-section .card3 .right {
-    width: 50%;
-    padding: 0 12px;
-  }
-  
-  /* card 4 */
-  .services-section .card4 {
-    height: 300px;
-    width: 49%;
-    display: flex;
-    align-items: center;
-    border-left: 1px solid var(--clr-accent-200);
-  }
-  .services-section .card4 .left {
-    height: 100%;
-    width: 50%;
-  }
-  .services-section .card4 .left img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding-left: 7px;
-  }
-  .services-section .card4 .right {
-    width: 50%;
-    padding: 0 12px;
-    padding-left: 24px;
-  }
-  
-  .content .heading {
-    color: var(--clr-secondary);
-    font-size: 26px;
-    line-height: 30px;
-  }
-  
-  .content .para {
-    color: var(--clr-secondary);
-    line-height: 27px;
-  }
-  
-  .content .read-more {
-    margin-top: 25px;
-    color: var(--clr-secondary);
-  }
-  
-  .content .read-more:hover {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* services section end */
+}
