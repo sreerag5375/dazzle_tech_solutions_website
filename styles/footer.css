@@ -1,20 +1,41 @@
 /* footer styles */
 
-@media (max-width: 800px) {
-  .footer-table {
-    display: none;
-  }
-}
 .footer {
-  padding: 30px 0;
-  width: 100%;
-  height: auto;
+  padding: 2rem 1.4rem;
   background-color: var(--clr-secondary);
+  color: var(--clr-accent-100);
 }
 
-.footer-table img {
-  height: 60px;
+.footer-container {
+  display: grid;
+  gap: 3rem;
 }
+
+.footer-company-desc .company-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-underline {
+  border: 1px solid white;
+  max-width: 180px;
+  margin-top: 0.5rem;
+}
+
+.footer-company-desc .company-logo img {
+  max-width: 240px;
+  /* margin-bottom: 1.2rem; */
+}
+
+.social-icons img {
+  width: 24px;
+  color: aliceblue;
+}
+
+.services-list {
+  list-style: none;
+}
+
 .footer a {
   color: white;
   text-decoration: none;
@@ -23,17 +44,64 @@
   color: var(--clr-secondary);
 }
 
-.footer table th,
-td {
-  color: white;
-  padding: 0px 40px;
-  text-align: left;
+.footer-contact-container img {
+  width: 1.2rem;
+}
+.footer-contact-container .title.flex {
+  --gap: 0.5rem;
 }
 
-.footer .footer-table {
-  margin: auto;
+.footer-contact-container > div {
+  display: flex;
+  align-items: start;
+  gap: 0.8rem;
 }
 
-.footer-table li {
-  padding-bottom: 10px;
+.footer-contact-container .contact-heading {
+  display: block;
+}
+
+.copy-right-container .thin-line {
+  border-bottom: 0.3px solid wheat;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.copy-right-container img {
+  width: 1.2rem;
+  margin-inline: 3px;
+}
+
+.copy-right-container > p {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 820px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 4fr 1fr; */
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .copy-right-container {
+    grid-column: span 3;
+  }
+
+  .footer-company-desc.text-center {
+    text-align: left;
+  }
+
+  .footer-company-desc .company-logo {
+    display: block;
+  }
+
+  .footer-company-desc .social-icons.flex {
+    --gap: 1rem;
+    --justify-content: left;
+  }
 }
